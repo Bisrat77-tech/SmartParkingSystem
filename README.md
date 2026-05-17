@@ -308,7 +308,131 @@ Positive integer validation
 
 Exception handling
 
-📝 Author
+📊 Sample Output
+Successful Parking
+
+=== SMART PARKING SYSTEM ===
+Enter parking lot name: City Center
+Enter total number of spots: 20
+
+✓ City Center initialized with 20 spots
+
+=== MENU ===
+1. Park vehicle
+2. Remove vehicle
+3. View all vehicles
+4. View available spots
+5. View revenue
+6. Exit
+Choice: 1
+
+=== PARK VEHICLE ===
+1. Car
+2. Motorcycle
+3. Truck
+Select type: 3
+Enter license plate (3-10 chars): TRUCK789
+Enter owner name: ABC Logistics
+Parking hours: 2
+Enter weight in tons: 4.5
+
+✓ Truck parked at spot #1 | Fee: $15.0
+
+=== PAYMENT DETAILS ===
+Vehicle: TRUCK789
+Amount due: $15.0
+Enter payment amount: $20
+✓ Payment successful!
+Change: $5.0
+Receipt printed. Thank you!
+
+Parking Lot Status
+
+=== AVAILABLE SPOTS ===
+Spot #2 (standard) - Available
+Spot #3 (standard) - Available
+Spot #4 (standard) - Available
+Spot #5 (electric) - Available
+Spot #6 (standard) - Available
+Total available: 15/20
+
+**⚠️ Error Handling**
+The system handles various error scenarios gracefully:
+
+Input Validation Errors
+// Invalid license plate
+Enter license plate (3-10 chars, uppercase letters/numbers): ab
+Invalid license plate format! Please try again.
+
+// Negative hours
+Enter parking hours: -5
+Please enter a positive number!
+
+// Non-numeric input
+Enter parking hours: ten
+Invalid input! Please enter a number.
+
+Business Logic Errors
+
+// Full parking lot
+✗ No available spots for VEH123
+
+// Vehicle not found
+✗ Vehicle XYZ999 not found
+
+// Insufficient payment
+Enter payment amount: $5
+✗ Insufficient payment. Please pay full amount.
+
+System Errors
+try {
+    // All user inputs wrapped in try-catch
+    int choice = Integer.parseInt(scanner.nextLine());
+} catch (NumberFormatException e) {
+    System.out.println("Please enter a valid number!");
+}
+
+**🔮 Future Enhancements**
+
+Short-term (Next Release)
+
+Database Integration - MySQL/PostgreSQL for persistent storage
+Logging System - SLF4J for better debugging
+Unit Tests - JUnit test cases
+Configuration File - External rates configuration
+Medium-term (Coming Soon)
+
+GUI Interface - Java Swing/JavaFX desktop application
+Reservation System - Book spots in advance
+Hourly Rate Configuration - Different rates for peak hours
+QR Code Tickets - Generate and scan QR codes
+Email Notifications - Send receipts via email
+Long-term (Roadmap)
+
+Mobile App - Android/iOS companion app
+License Plate Recognition - Automatic entry/exit
+Real-time Dashboard - Web-based monitoring
+Monthly Subscriptions - Regular customer plans
+Analytics Dashboard - Occupancy trends and revenue reports
+
+**🤝 Contributing**
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch
+ -git checkout -b feature/AmazingFeature
+3. Commit your changes
+ -git commit -m 'Add some AmazingFeature'
+4. Push to the branch
+ -git push origin feature/AmazingFeature
+5. Open a Pull Request
+Contribution Guidelines
+-Follow Java coding conventions
+-Add comments for complex logic
+-Update README if needed
+-Test your changes thoroughly
+
+**📝 Author**
 Bisrat Zenebe
 
 Course: BITS-OOP
@@ -317,4 +441,34 @@ Assignment: Task #3 - Smart Parking System
 
 GitHub: @Bisrat77-tech
 
-Email: your.email@example.com
+Email: bisratzenebe94@gmail.com
+
+**🙏 Acknowledgments**
+BITS - OOP Course Materials and guidance
+Java Community - Excellent documentation and resources
+Open Source Contributors - Inspiration and best practices
+
+**📄 License**
+This project is licensed under the MIT License - see below:
+MIT License
+
+Copyright (c) 2024 Your Name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions...
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
+
+⭐ Show Your Support
+If you found this project helpful, please give it a star on GitHub!
+
+<div align="center">
+Made with ☕ and Java
+
+Happy Coding! 🎉
+
+</div> ```
