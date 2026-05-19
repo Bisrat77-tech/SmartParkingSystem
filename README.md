@@ -356,7 +356,7 @@ Spot #5 (electric) - Available
 Spot #6 (standard) - Available
 Total available: 15/20
 
-**⚠️ Error Handling**
+## ⚠️ Error Handling
 The system handles various error scenarios gracefully:
 
 Input Validation Errors
@@ -392,7 +392,7 @@ try {
     System.out.println("Please enter a valid number!");
 }
 
-**🔮 Future Enhancements**
+## 🔮 Future Enhancements
 
 Short-term (Next Release)
 
@@ -415,7 +415,7 @@ Real-time Dashboard - Web-based monitoring
 Monthly Subscriptions - Regular customer plans
 Analytics Dashboard - Occupancy trends and revenue reports
 
-**🤝 Contributing**
+## 🤝 Contributing
 Contributions are welcome! Here's how you can help:
 
 1. Fork the repository
@@ -432,7 +432,7 @@ Contribution Guidelines
 -Update README if needed
 -Test your changes thoroughly
 
-**📝 Author**
+## 📝 Author
 Bisrat Zenebe
 
 Course: BITS-OOP
@@ -443,12 +443,12 @@ GitHub: @Bisrat77-tech
 
 Email: bisratzenebe94@gmail.com
 
-**🙏 Acknowledgments**
+## 🙏 Acknowledgments
 BITS - OOP Course Materials and guidance
 Java Community - Excellent documentation and resources
 Open Source Contributors - Inspiration and best practices
 
-**📄 License**
+## 📄 License
 This project is licensed under the MIT License - see below:
 MIT License
 
