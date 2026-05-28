@@ -119,9 +119,9 @@ Smart-Parking-System/
 ## 🔧 Installation & Setup
 
 ### Option 1: Using IntelliJ IDEA (Recommended)
-
+```
 1. **Clone the repository:**
-```bash
+bash
 git clone https://github.com/YOUR_USERNAME/Smart-Parking-System.git
 2. Open in IntelliJ IDEA:
 
@@ -136,7 +136,8 @@ Set Project SDK to Java 8 or higher
 4. Run the application:
 
 Right-click on Main.java → Run 'Main.main()'
-📖 Usage Guide
+```
+ ## 📖 Usage Guide
 Main Menu Options
 === SMART PARKING SYSTEM ===
 1. Park a vehicle
@@ -146,6 +147,7 @@ Main Menu Options
 5. View total revenue
 6. Exit
 
+```
 Step-by-Step: Parking a Vehicle
 Select option 1 from main menu
 
@@ -189,8 +191,10 @@ Enter the license plate number
 Vehicle is removed from the system
 
 Spot becomes available for other vehicles
+```
 
-Example Session
+## Example Session
+```
 === SMART PARKING SYSTEM ===
 Enter parking lot name: Downtown Plaza
 Enter total number of spots: 15
@@ -225,90 +229,66 @@ Enter payment amount: $10
 ✓ Payment successful!
 Change: $2.0
 Receipt printed. Thank you!
-📚 Class Descriptions
+```
+## 📚 Class Descriptions
+```
 Vehicle (Abstract Class)
 Purpose: Base class for all vehicle types
-
 Key Attributes: licensePlate, ownerName, vehicleType, parkingFee
 
 Key Methods:
-
 calculateParkingFee(int hours) - abstract
-
 getRequiredSpots() - abstract
 
 Access Modifiers: Private with public getters/setters
 
 Car
 Purpose: Represents a car with electric option
-
 Rate: $2/hour
-
 Discount: 20% for electric vehicles
-
 Spot Requirement: 1 spot
 
 Motorcycle
 Purpose: Represents a motorcycle
-
 Rate: $1/hour
-
 Spot Requirement: 1 spot
 
 Truck
 Purpose: Represents a truck with weight tracking
-
 Rate: $5/hour
-
 Heavy Load Surcharge: 50% extra for weight > 3.5 tons
-
 Spot Requirement: 1 spot (2 spots for heavy trucks)
 
 ParkingSpot
 Purpose: Manages individual parking spots
-
 Types: Standard, Electric, Handicap
-
 Status: Occupied/Available
-
 Methods: parkVehicle(), removeVehicle()
 
 ParkingLot
 Purpose: Manages the entire parking facility
-
 Collections: ArrayList of ParkingSpot and Vehicle
-
 Features:
-
 Dynamic spot allocation
-
 Revenue calculation
-
 Vehicle tracking
 
 PaymentService
 Purpose: Handles payment processing
-
 Features:
-
 Payment validation
-
 Change calculation
-
 Receipt generation
 
 InputValidator
 Purpose: Validates user input
-
 Features:
-
 License plate pattern matching
-
 Positive integer validation
-
 Exception handling
-
-📊 Sample Output
+```
+## 📊 Sample Output
+```
 Successful Parking
 
 === SMART PARKING SYSTEM ===
@@ -391,33 +371,32 @@ try {
 } catch (NumberFormatException e) {
     System.out.println("Please enter a valid number!");
 }
-
-## 🔮 Future Enhancements
-
+```
+ ## 🔮 Future Enhancements
+```
 Short-term (Next Release)
-
 Database Integration - MySQL/PostgreSQL for persistent storage
 Logging System - SLF4J for better debugging
 Unit Tests - JUnit test cases
 Configuration File - External rates configuration
-Medium-term (Coming Soon)
 
+Medium-term (Coming Soon)
 GUI Interface - Java Swing/JavaFX desktop application
 Reservation System - Book spots in advance
 Hourly Rate Configuration - Different rates for peak hours
 QR Code Tickets - Generate and scan QR codes
 Email Notifications - Send receipts via email
-Long-term (Roadmap)
 
+Long-term (Roadmap)
 Mobile App - Android/iOS companion app
 License Plate Recognition - Automatic entry/exit
 Real-time Dashboard - Web-based monitoring
 Monthly Subscriptions - Regular customer plans
 Analytics Dashboard - Occupancy trends and revenue reports
-
+```
 ## 🤝 Contributing
 Contributions are welcome! Here's how you can help:
-
+```
 1. Fork the repository
 2. Create a feature branch
  -git checkout -b feature/AmazingFeature
@@ -431,7 +410,7 @@ Contribution Guidelines
 -Add comments for complex logic
 -Update README if needed
 -Test your changes thoroughly
-
+```
 ## 📝 Author
 Bisrat Zenebe
 
@@ -467,7 +446,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
 If you found this project helpful, please give it a star on GitHub!
 
 <div align="center">
-Made with ☕ and Java
+Made with Java!
 
 Happy Coding! 🎉
 
