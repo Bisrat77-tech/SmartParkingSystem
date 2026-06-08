@@ -80,6 +80,7 @@ This project was developed as part of **BITS-OOP Task #3** to demonstrate master
 | **User Input** | `Main.java` | `Scanner` class for interactive console input |
 
 ## 📁 Project Structure
+```
 Smart-Parking-System/
 │
 ├── com/
@@ -102,6 +103,7 @@ Smart-Parking-System/
 │
 ├── .gitignore # Git ignore file
 └── README.md # Project documentation
+```
 
 ## 💻 Requirements
 
